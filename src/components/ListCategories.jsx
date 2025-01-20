@@ -7,8 +7,8 @@ const ListCategories = () => {
     const [categories, setCategories] = useState([]);
 
     useEffect(() => {
-        buscar(`/categorias`, setCategories)
-    }, [])
+        buscar(`/categorias`, setCategories);
+    }, []);
 
     return (
         <ul className="category-list container flex">
@@ -22,7 +22,7 @@ const ListCategories = () => {
                 ))
             }
         </ul>
-    )
-}
+    );
+};
 
 export default ListCategories;

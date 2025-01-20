@@ -15,7 +15,7 @@ const ListPosts = ({ url }) => {
             {
                 posts.map(post => {
                     const { id, title, metadescription, categoria } = post;
-                    return <Link to={`/posts/${id}`} className={`post__card post-card--${categoria}`}>
+                    return <Link to={`/posts/${id}`} key={id} className={`post__card post-card--${categoria}`}>
                         <article>
                             <h2 className="post-card__title">{title}</h2>
                             <p className="post-card__text">{metadescription}</p>
